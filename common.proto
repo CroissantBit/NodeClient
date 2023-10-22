@@ -1,0 +1,20 @@
+// A very simple protocol definition, consisting of only
+// one message.
+package common;
+
+syntax = "proto3";
+import "nanopb.proto";
+
+message Ping {
+    option (nanopb_msgopt).msgid = 1;
+}
+
+message Pong {
+    option (nanopb_msgopt).msgid = 2; 
+}
+
+message SimpleMessage {
+    option (nanopb_msgopt).msgid = 3;
+    int32 lucky_number = 1;
+    string message = 2  [(nanopb).max_size = 40];
+}
