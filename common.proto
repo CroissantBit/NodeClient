@@ -1,20 +1,36 @@
-// A very simple protocol definition, consisting of only
-// one message.
-package common;
-
 syntax = "proto3";
-import "nanopb.proto";
+package croissantbit;
 
+import "nanopb.proto";
+import "medium.proto";
+
+// Ping request
 message Ping {
     option (nanopb_msgopt).msgid = 1;
 }
 
+// Response to a ping
 message Pong {
     option (nanopb_msgopt).msgid = 2; 
 }
 
-message SimpleMessage {
+message RegisterClient {
     option (nanopb_msgopt).msgid = 3;
-    int32 lucky_number = 1;
-    string message = 2  [(nanopb).max_size = 40];
+    optional VideoInfo video_info = 1;
+    optional AudioInfo audio_info = 2;
+    // Also signal / button info
 }
+
+message RegisterClientResponse {
+    option (nanopb_msgopt).msgid = 4;
+    optional int32 client_id = 1;
+}
+
+message VideoFrame {
+    option (nanopb_msgopt).msgid = 5;
+    oneof payload {
+        VideoFrameFull full = 1;
+        VideoFramePartial partial = 2;
+    }
+}
+
