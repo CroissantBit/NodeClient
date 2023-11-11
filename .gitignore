@@ -1,3 +1,6 @@
+# Generted Protocol Buffers files
+types/
+
 # Logs
 logs
 *.log
