@@ -4,11 +4,12 @@
     "gen_linux": "protoc --proto_path=proto/src/ --plugin=protoc-gen-ts_proto=node_modules/.bin/protoc-gen-ts_proto --ts_proto_opt=outputTypeAnnotations=static-only --ts_proto_opt=outputTypeRegistry=true --ts_proto_opt=exportCommonSymbols=false --ts_proto_opt=esModuleInterop=true --ts_proto_opt=env=node --ts_proto_out=./types ./proto/src/*.proto"
   },
   "dependencies": {
-    "@types/node": "^20.9.0",
+    "@types/node": "^20.10.4",
+    "cobs": "^0.2.1",
     "protobufjs": "^7.2.5",
     "serialport": "^12.0.0",
-    "ts-proto": "^1.164.0",
-    "typescript": "^5.2.2",
-    "ws": "^8.14.2"
+    "ts-proto": "^1.165.1",
+    "typescript": "^5.3.3",
+    "ws": "^8.15.0"
   }
 }

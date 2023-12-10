@@ -6,8 +6,11 @@ settings:
 
 dependencies:
   '@types/node':
-    specifier: ^20.9.0
-    version: 20.9.0
+    specifier: ^20.10.4
+    version: 20.10.4
+  cobs:
+    specifier: ^0.2.1
+    version: 0.2.1
   protobufjs:
     specifier: ^7.2.5
     version: 7.2.5
@@ -15,14 +18,14 @@ dependencies:
     specifier: ^12.0.0
     version: 12.0.0
   ts-proto:
-    specifier: ^1.164.0
-    version: 1.164.0
+    specifier: ^1.165.1
+    version: 1.165.1
   typescript:
-    specifier: ^5.2.2
-    version: 5.2.2
+    specifier: ^5.3.3
+    version: 5.3.3
   ws:
-    specifier: ^8.14.2
-    version: 8.14.2
+    specifier: ^8.15.0
+    version: 8.15.0
 
 packages:
 
@@ -172,8 +175,8 @@ packages:
       - supports-color
     dev: false
 
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+  /@types/node@20.10.4:
+    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -181,6 +184,10 @@ packages:
   /case-anything@2.1.13:
     resolution: {integrity: sha512-zlOQ80VrQ2Ue+ymH5OuM/DlDq64mEm+B9UTdHULv5osUMD6HalNTblf2b1u/m6QecjsnOkBpqVZ+XPwIVsy7Ng==}
     engines: {node: '>=12.13'}
+    dev: false
+
+  /cobs@0.2.1:
+    resolution: {integrity: sha512-rf2gUd1MS8AoQQG1xpqlXk3wuoIWAwx//GxloBOf8sj1hN15KEjmP/OkC6lyKTx/J0CrULKM3xzlfj9gq3auAQ==}
     dev: false
 
   /debug@4.3.4:
@@ -239,7 +246,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.9.0
+      '@types/node': 20.10.4
       long: 5.2.3
     dev: false
 
@@ -278,8 +285,8 @@ packages:
       protobufjs: 7.2.5
     dev: false
 
-  /ts-proto@1.164.0:
-    resolution: {integrity: sha512-yIyMucjcozS7Vxtyy5mH6C8ltbY4gEBVNW4ymZ0kWiKlyMxsvhyUZ63CbxcF7dCKQVjHR+fLJ3SiorfgyhQ+AQ==}
+  /ts-proto@1.165.1:
+    resolution: {integrity: sha512-tn/sj9i31Q4d3/HtN2PFMU/OQwrBYP2cfhYo75cPpO2ks7unFxf1/oMdIt/2woCcOwRclxruGCrs7Ljdl9BPkw==}
     hasBin: true
     dependencies:
       case-anything: 2.1.13
@@ -288,8 +295,8 @@ packages:
       ts-proto-descriptors: 1.15.0
     dev: false
 
-  /typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: false
@@ -298,8 +305,8 @@ packages:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: false
 
-  /ws@8.14.2:
-    resolution: {integrity: sha512-wEBG1ftX4jcglPxgFCMJmZ2PLtSbJ2Peg6TmpJFTbe9GZYOQCDPdMYu/Tm0/bGZkw8paZnJY45J4K2PZrLYq8g==}
+  /ws@8.15.0:
+    resolution: {integrity: sha512-H/Z3H55mrcrgjFwI+5jKavgXvwQLtfPCUEp6pi35VhoB0pfcHnSoyuTzkBEZpzq49g1193CUEwIvmsjcotenYw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
